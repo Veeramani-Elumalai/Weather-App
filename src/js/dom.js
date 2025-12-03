@@ -2,7 +2,16 @@ import { dataSet } from './weatherData';
 
 const resultContainer = document.querySelector('#weatherResult');
 
-export function displayWeather() {
+export async function displayWeather() {
+  resultContainer.innerHTML = '';
+
+  const loadingEl = document.createElement('div');
+  loadingEl.className = 'loading';
+  loadingEl.textContent = 'Loading...';
+  resultContainer.appendChild(loadingEl);
+
+  await new Promise((resolve) => setTimeout(resolve, 500));
+
   resultContainer.innerHTML = '';
 
   dataSet.forEach((report) => {

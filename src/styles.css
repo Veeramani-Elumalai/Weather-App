@@ -10,9 +10,19 @@ body {
   background-color: rgb(98 132 130);
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  gap: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+blockquote {
+  color: #fff000;
 }
 
 .search-box {
@@ -40,6 +50,15 @@ body {
 .weather-card {
   background-color: bisque;
   padding: 30px;
+  border-radius: 10px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  color: azure;
   border-radius: 10px;
 }
 

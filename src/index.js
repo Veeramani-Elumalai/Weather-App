@@ -6,8 +6,12 @@ const input = document.querySelector('#searchCity');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+
   const city = input.value.trim();
-  if (!city) return;
+  if (!city) {
+    alert('Please Enter a city name...');
+    return;
+  }
 
   const report = await fetchData(city);
 
