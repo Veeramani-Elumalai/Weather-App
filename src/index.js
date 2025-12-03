@@ -11,9 +11,9 @@ form.addEventListener('submit', async (e) => {
 
   const report = await fetchData(city);
 
-  if (report) {
-    displayWeather([report]);
-  } else {
+  if (!report) {
     displayWeather([]);
+    return;
   }
+  displayWeather([report]);
 });

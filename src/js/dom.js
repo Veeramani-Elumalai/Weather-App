@@ -14,30 +14,30 @@ export function displayWeather() {
     card.classList.add('weather-card');
 
     const celsius = document.createElement('span');
-    celsius.textContent = report.celsius;
+    celsius.textContent = `Celcius :${report.celsius} °C`;
 
     const wind = document.createElement('span');
-    wind.textContent = report.wind;
+    wind.textContent = `Windspeed :${report.wind} km/h`;
 
     const humidity = document.createElement('p');
-    humidity.textContent = report.humidity;
+    humidity.textContent = `Humidity :${report.humidity} %`;
 
     const percipitation = document.createElement('p');
-    percipitation.textContent = report.percipitation;
+    percipitation.textContent = `Percipitation :${report.percipitation} %`;
 
     const description = document.createElement('p');
-    description.textContent = report.description;
+    description.textContent = `Description :${report.description}`;
 
     const dateTime = document.createElement('p');
-    dateTime.textContent = report.dateTime;
+    dateTime.textContent = `Date & Time :${report.dateTime}`;
 
     const address = document.createElement('p');
-    address.textContent = report.address;
+    address.textContent = `Location :${report.address}`;
 
     card.append(
       celsius,
-      wind,
       humidity,
+      wind,
       percipitation,
       description,
       dateTime,
