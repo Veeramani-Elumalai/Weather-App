@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="search-box">
-      <form id="searchForm">
-        <label for="searchCity">Search:</label>
-        <input
-          type="text"
-          id="searchCity"
-          name="searchCity"
-          placeholder="Search..."
-        />
-        <button type="submit">Go!</button>
-      </form>
+    <div class="container">
+      <div class="search-box">
+        <form id="searchForm">
+          <label for="searchCity">Search:</label>
+          <input
+            type="text"
+            id="searchCity"
+            name="searchCity"
+            placeholder="Search a City"
+          />
+          <button type="submit">Go!</button>
+        </form>
+      </div>
+      <div id="weatherResult" class="weather-result"></div>
     </div>
-    <div id="weatherResult" class="weather-result"></div>
   </body>
 </html>

@@ -1,6 +1,6 @@
 import { fetchData } from './js/weatherData';
 import { displayWeather } from './js/dom';
-
+import './styles.css';
 const form = document.querySelector('#searchForm');
 const input = document.querySelector('#searchCity');
 

@@ -28,21 +28,10 @@ export function displayWeather() {
     const description = document.createElement('p');
     description.textContent = `Description :${report.description}`;
 
-    const dateTime = document.createElement('p');
-    dateTime.textContent = `Date & Time :${report.dateTime}`;
-
     const address = document.createElement('p');
     address.textContent = `Location :${report.address}`;
 
-    card.append(
-      celsius,
-      humidity,
-      wind,
-      percipitation,
-      description,
-      dateTime,
-      address
-    );
+    card.append(celsius, humidity, wind, percipitation, description, address);
 
     resultContainer.appendChild(card);
   });
