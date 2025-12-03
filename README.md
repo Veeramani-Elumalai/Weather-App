@@ -14,8 +14,6 @@ This app fetches real-time weather data from a weather API and displays temperat
 ⚡ Fast performance with JavaScript + Webpack build
 
 ❌ Error handling for invalid city names or network issues
-<img width="1171" height="862" alt="Screenshot 2025-12-03 201521" src="https://github.com/user-attachments/assets/cb2e3397-a3c2-4e7a-ac0d-fc72af98f0f6" />
-
 
 🛠️ Tech Stack
 
@@ -28,3 +26,8 @@ JavaScript (ES6)
 Webpack (Bundling & Dev Server)
 
 Weather API (VisualCrossing)
+
+Screenshots :
+<img width="1171" height="862" alt="Screenshot 2025-12-03 201521" src="https://github.com/user-attachments/assets/cb2e3397-a3c2-4e7a-ac0d-fc72af98f0f6" />
+<img width="225" height="547" alt="Screenshot 2025-12-03 204626" src="https://github.com/user-attachments/assets/300f2ff7-9ad9-411a-8d9a-c62efa8fe3f3" />
+
